@@ -16,6 +16,10 @@ body {
     box-sizing: content-box;
 }
 
+/* HEADER */
+
+/* header */
+
 .header {
     display: flex;
     align-items: center;
@@ -37,12 +41,15 @@ body {
 }
 .welcome {}
 .welcome__svg-block {
+}
+.svg-block {
     display: flex;
     max-width: 103px;
     max-height: 23px;
-    padding-top: 40px;
+    margin-top: 40px;
 }
-.welcome__icon {
+.welcome__icon {}
+.svg-icon {
     width: 100%;
     height: 100%;
 }
@@ -54,6 +61,7 @@ body {
 }
 .welcome__title {
     font-family: "Bebas Neue";
+    letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
     font-size: 60px;
@@ -72,8 +80,9 @@ body {
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 3.6px;
+    padding: 2px 5px;
+    margin-bottom: 66px;
     color: white;
-    padding-bottom: 70px;
 }
 
 .header__image-block {
@@ -85,4 +94,48 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* MAIN */
+
+.main {
+}
+
+/* main__navigation */
+
+.main__navigation {
+    border-bottom: 1px solid #E6E6E6;
+}
+.container {}
+.navigation-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 23px 0;
+}
+
+.main .svg-block {
+    margin-top: 0;
+}
+.svg-block {
+}
+.svg-icon {
+}
+.navigation {
+}
+.navigation > *:not(:last-child) {
+    margin-right: 40px;
+}
+.navigation__link {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.page_active {
+    color: #00A4E5;
 }
